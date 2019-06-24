@@ -2,8 +2,8 @@
 
 
 Durante a cumprimento do estágio foi possível realizar todas as etapas esperadas. Os estudos foram realizados, o ambiente de desenvolvimento foi
-utilizado e melhorado para o desenvolvimento do módulo assinador do plugin utilizando o SDK e API da Adobe e atualmente o plugin está disponível,
-empacotado e pronto para uso, com os padroões ADRB, ADRT, ADRC e ADRA implementados e poucas correções a serem feitas.
+utilizado e melhorado para o desenvolvimento do módulo assinador do plugin utilizando o SDK e API da Adobe[1] e atualmente o plugin está disponível,
+empacotado e pronto para uso, com os padroões ADRB, ADRT, ADRC e ADRA[0] implementados e poucas correções a serem feitas.
 
 Algumas das etapas foram mais difíceis do que o esperado devido a limitações principalmente referentes a API da Adobe, porque apesar de dispor de uma
 documentação extensa, muitas vezes não haviam exemplos de uso disponíveis e as perguntas em seus fóruns boa parte das vezes não eram respondidas.
@@ -12,14 +12,14 @@ Acredito também que esse SDK não foi pensado para um projeto que exigisse o n�
 Outro limitante em certos períodos foram relativos a certificados digitais válidos e disponibilidade de carimbos de tempo, que são recursos pagos e
 tiveram que ser adquiridos com recursos do projeto, o que exigiu certo tempo, mas foram adquiridos.
 
-O ambiente de desenvolvimento por ser em Windows e utilizando o Adobe SDK também dificultou, e certas vezes, impossibilitou a aplicação de técnicas modernas
+O ambiente de desenvolvimento por ser em Windows e utilizando o Adobe SDK[1] também dificultou, e certas vezes, impossibilitou a aplicação de técnicas modernas
 de Engenharia de Software: como aspectos de DevOps, testes automatizados e debugging. Mas em contrapartida também serviu de aprendizado de como contornar
 alguns desses problemas.
 
 Um aspecto bastante forte de aprendizado foi relativo ao uso de tecnologias para manipulação de informações de segurança em baixo nível, bibliotecas
-para manipulação de ASN.1, informação diretamente em binário, lidar com várias bases numéricas: hexadecimal, binário e base64. O uso da biblioteca
+para manipulação de ASN.1[4], informação diretamente em binário, lidar com várias bases numéricas: hexadecimal, binário e base64. O uso da biblioteca
 Openssl também foi bastante interessante e um conhecimento ainda válido para diversos contextos e não só para esse projeto.
 
-Outro ponto interessante do projeto foi a implementação de protocolos diretamente da especificação. Como a implementação do Time Stamp Protocol, que
+Outro ponto interessante do projeto foi a implementação de protocolos diretamente da especificação. Como a implementação do TSP[3], que
 as tecnologias da Adobe utilizado só possuíam sua implementação via HTTP e não diretamente via TCP. Além disso, todos os formatos de assinatura foram
 também implementados diretamente da especificação e seus resultados comparados com implementações disponíveis atualemente (que raramente eram de código aberto).
